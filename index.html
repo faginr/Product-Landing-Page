@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
+  <meta charset="utf-8">
 <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Product Landing Page</title>
 	<!-- 
 	User Story #1: My product landing page should have a header element with a corresponding id="header".
@@ -22,20 +25,26 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
 </head>
 <body>
 	<header id="header">
-		<h3>Placeholder Header</h3>
-		<img src="#" id="header-img">
+		<div id="brand">
+		<img src="waterLogo1.png" id="header-img">
+		<h3>ReFresh Water</h3>
+		</div>
 		<nav id="nav-bar">
-			<ul>
-				<li class="nav-link"><a href="">Link</a></li>
-				<li class="nav-link"><a href="">Link2</a></li>
-				<li class="nav-link"><a href="">Link3</a></li>
-			</ul>	
+				<div class="nav-link"><a href="">Features</a></div>
+				<div class="nav-link"><a href="">Video</a></div>
+				<div class="nav-link"><a href="">Sign Up</a></div>	
 		</nav>
 	</header>
 	
-	<video>
-		<source src="" type="">	
-	</video>
+	<div id="jumbo">
+		<h1>Pure water is possible</h1>
+	</div>
+
+	<div class="blurb">
+		<p>How clean is the water you drink? At ReFresh Water, we believe nothing is more important that your health, and your health starts with what you put into your body. Our patented ReFresh technology assures the water you put in will come out pure down to the micron. We do all the work for you so that you can rest assured that you only take in what you want to and nothing more.</p>
+	</div>
+
+	<iframe width="500" height="300" src="https://www.youtube.com/embed/Og87nNRvldM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	<form id="form">
 		<label>1</label>
