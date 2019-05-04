@@ -4,6 +4,7 @@
   <meta charset="utf-8">
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 	<title>Product Landing Page</title>
 	<!-- 
 	User Story #1: My product landing page should have a header element with a corresponding id="header".
@@ -30,28 +31,43 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
 		<h3>ReFresh Water</h3>
 		</div>
 		<nav id="nav-bar">
-				<div class="nav-link"><a href="">Features</a></div>
-				<div class="nav-link"><a href="">Video</a></div>
-				<div class="nav-link"><a href="">Sign Up</a></div>	
+				<div class="nav-link"><a href="#textspot">Features</a></div>
+				<div class="nav-link"><a href="#video">Video</a></div>
+				<div class="nav-link"><a href="#form">Sign Up</a></div>	
 		</nav>
 	</header>
 	
 	<div id="jumbo">
 		<h1>Pure water is possible</h1>
 	</div>
-
-	<div class="blurb">
+	<div id="textspot"></div>
+	<div id="blurb">
 		<p>How clean is the water you drink? At ReFresh Water, we believe nothing is more important that your health, and your health starts with what you put into your body. Our patented ReFresh technology assures the water you put in will come out pure down to the micron. We do all the work for you so that you can rest assured that you only take in what you want to and nothing more.</p>
 	</div>
 
-	<iframe width="500" height="300" src="https://www.youtube.com/embed/Og87nNRvldM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="teaser">
+		<a href="#video"><strong>See it in Action</strong></a>
+	</div>
+
+	<iframe id="video" width="500" height="300" src="https://www.youtube.com/embed/Og87nNRvldM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	<form id="form">
-		<label>1</label>
-		<input type="text" name="">
-		<label>2</label>
-		<input type="email" name="">
-		<button>Submit</button>
+		<p id="subtitle"><strong>Get Started</strong></p>
+		<div class="left">
+		<label for="name">Name:</label>
+		</div>
+		<div class="right">
+		<input id="name" type="text" name="name" placeholder="Enter your name">
+		</div>
+		<div class="left">
+		<label for="email">Email:</label>
+		</div>
+		<div class="right">
+		<input id="email" type="email" name="email" placeholder="Enter your email">
+		</div>
+		<div>
+		<input type="submit" name="submit" id="submit" value="Submit">
+		</div>
 	</form>
 
 </body>

@@ -2,6 +2,7 @@ body{
 	background-color: cornflowerblue;
 	margin: auto;
 	text-align: center;
+	font-family: 'Lato', sans-serif;
 }
 
 /*Navbar*/
@@ -25,6 +26,9 @@ body{
 	margin-left: 10px;
 	padding-left: 3px;
 	padding-right: 3px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
 }
 
 #nav-bar {
@@ -34,28 +38,104 @@ body{
 .nav-link {
 	font-size: 1.5em;
 	text-align: center;
-	margin: 0 5px 0 5px;
+	margin: 0 10px 0 10px;
 	padding: 0 5px 0 5px;
+}
+
+.nav-link > a:link {
+	text-decoration: none;
+	color: darkgrey;
+}
+
+.nav-link > a:visited {
+	color: slategrey;
+}
+
+#jumbo {
+	font-size: 1.5em;
+	margin-top: 10%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.nav-link > a:link {
-	text-decoration: none;
-}
-
-#jumbo {
-	margin-top: 5%;
-}
-
-.blurb {
+#blurb {
+	font-size: 1.5em;
+	line-height: 200%;
 	text-align: justify;
-	width: 60%;
+	width: 45%;
 	margin: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.teaser {
+	background: linear-gradient(180deg, gold 60%, #d8b601 100%);
+	font-size: 1.15em;
+	margin: auto;
+	padding-top: 12px;
+	width: 150px;
+	height: 33px;
+	border: 1px solid gold;
+	box-shadow: 1px 1px 1px khaki;
+	border-radius: 4px;
+	margin-bottom: 10%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+.teaser > a {
+	color: black;
+}
+
+.teaser > a:link {
+	text-decoration: none
 }
 
 iframe{
 	border: 1px solid black;
+	margin-bottom: 6%;
+}
+
+#subtitle {
+	font-size: 1.5em;
+	margin-bottom: 3%;
+	margin-top: 5px;
+}
+
+#form {
+	margin: auto;
+	background-color: lightgrey;
+	width: 415px;
+	padding: 10px;
+	margin-bottom: 50px;
+	border-radius: 7px;
+}
+
+.left{
+	display: inline-block;
+	text-align: right;
+	width:26%;
+	padding: 5px;
+	margin: 5 0px;
+}
+.right{
+	display: inline-block;
+	width:40%;
+	text-align: left;
+	padding:5px;
+}
+
+#submit {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 88px;
+	height: 26px;
+	border: 2px solid slategrey;
+	border-radius: 4px;
 }
